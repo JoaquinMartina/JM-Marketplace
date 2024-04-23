@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open Market - Notebook Dell Inspiron 3505</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<script src="main.js"></script>
+
+<div id="pantalla">
+    <div id="buscador" class="box">
+        <form action="/buscador">
+            <label>
+                Buscar artículo
+                <input type="text">
+                <input type="submit" value="Buscar">
+            </label>
+        </form>
+    </div>
+
+    <div id="imagen" class="box">
+    </div>
+
+    <div id="info-producto" class="box">
+    </div>
+
+    <div id="puntaje" class="box">
+        <p>Excelente producto. Puntaje: 5/5</p>
+        <p>Bastante bueno. Puntaje: 4/5</p>
+    </div>
+
+    <div id="ingreso-puntaje" class="box">
+        <form action="/puntaje">
+            <label>Puntaje</label>
+            <label>
+                <input type="radio" name="puntaje-ingresado"> 1
+            </label>
+            <label>
+                <input type="radio" name="puntaje-ingresado"> 2
+            </label>
+            <label>
+                <input type="radio" name="puntaje-ingresado"> 3
+            </label>
+            <label>
+                <input type="radio" name="puntaje-ingresado"> 4
+            </label>
+            <label>
+                <input type="radio" name="puntaje-ingresado"> 5
+            </label>
+
+            <input type="submit" value="Dar puntaje">
+        </form>
+    </div>
+</div>
+</body>
+</html>
