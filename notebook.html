@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Open Market - Notebook Dell Inspiron 3505</title>
+    <title>Artículo</title>
     <link rel="stylesheet" href="estilos.css">
+    <script src="notebook.js" defer></script>
 </head>
 <body>
-<script src="main.js"></script>
-
+<div id="" class="header">
+    <h1>Producto</h1>
+</div>
 <div id="pantalla">
     <div id="buscador" class="box">
         <form action="/buscador">
@@ -20,9 +22,17 @@
     </div>
 
     <div id="imagen" class="box">
+        <img id="image_url" src="" alt="Notebook">
     </div>
 
     <div id="info-producto" class="box">
+        <h2 id="title"></h2>
+        <div>
+            <p id="description"></p>
+            <ul id="notebooksTypes">
+            </ul>
+        </div>
+        <a href="" target="_blank" id="factory_url">Sitio Web Fabricante</a>
     </div>
 
     <div id="puntaje" class="box">
@@ -52,6 +62,9 @@
             <input type="submit" value="Dar puntaje">
         </form>
     </div>
+</div>
+<div id="" class="footer">
+    <h1>Footer</h1>
 </div>
 </body>
 </html>
