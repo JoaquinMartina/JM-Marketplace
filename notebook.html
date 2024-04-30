@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>Artículo</title>
     <link rel="stylesheet" href="estilos.css">
-    <script src="notebook.js" defer></script>
+    <!-- Import Vue.js -->
+    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
 </head>
 <body>
 <div id="" class="header">
@@ -22,17 +23,21 @@
     </div>
 
     <div id="imagen" class="box">
-        <img id="image_url" src="" alt="Notebook">
+        <img id="image_url" :src="image_url" alt="Notebook">
     </div>
 
     <div id="info-producto" class="box">
-        <h2 id="title"></h2>
+        <h2 id="title">{{ title }}</h2>
         <div>
-            <p id="description"></p>
+            <p id="description">{{ description }}</p>
             <ul id="notebooksTypes">
+                <li v-for="notebooks in notebooksTypes">
+                   Memoria Ram: {{ notebooks.ramAmount }} |
+                   Precio ARS: {{ notebooks.price }}
+                </li>
             </ul>
         </div>
-        <a href="" target="_blank" id="factory_url">Sitio Web Fabricante</a>
+        <a :href="factory_url" target="_blank" id="factory_url">Sitio Web Fabricante</a>
     </div>
 
     <div id="puntaje" class="box">
@@ -66,5 +71,13 @@
 <div id="" class="footer">
     <h1>Footer</h1>
 </div>
+
+ <!-- Import App -->
+<script src="notebook-vue.js"></script>
+<!-- Mount App -->
+<script>
+    const appMontada = app.mount('#pantalla');
+</script>
+
 </body>
 </html>
